@@ -39,14 +39,14 @@ fs.writeFile('./info.json', jsonString, err => {
       .catch(error => console.log(error));
 
 
-}, 500);
+}, 300);
 // 500 miliseconds seems like the time that people would take to refresh the page and fetch a new quote, right??
 // well maybe
 // btw im talking to myself
 // im going insane
 // also someone else made the quotes json thing but k
 
-
+// k i fixed it to 300
 
 
 
