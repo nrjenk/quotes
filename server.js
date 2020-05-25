@@ -19,17 +19,7 @@ lol why are you here ????
 
 setInterval(function(){
 
-   var r = Math.floor(Math.random() * websites.length);
 
-    var r2 = Math.floor(Math.random() * second.length);
-
-  var goto = (websites[r] || websites[0])
-  var second = (second[r2] || second[0])
-
-    let final = { 
- "quote": goto,
-  "author": second
-    } 
     fetch("https://nate-quote-api.herokuapp.com/quotes.json")
 
     .then(res => res.json())
