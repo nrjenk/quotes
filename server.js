@@ -1,8 +1,4 @@
-// server.js
-// where your node app starts
 
-// we've started you off with Express (https://expressjs.com/)
-// but feel free to use whatever libraries or frameworks you'd like through `package.json`.
 const express = require("express");
 const app = express();
 const fs = require('fs');
@@ -15,7 +11,7 @@ let randomnum = Math.floor(Math.random() * 3);
  /*
  
 
-
+lol why are you here ????
 
 
  */
@@ -23,14 +19,6 @@ let randomnum = Math.floor(Math.random() * 3);
 
 setInterval(function(){
 
-var websites = [
-    "title13",
-  "tile yeet"
-];
-var second = [
-  "second",
-"second2"
-];
    var r = Math.floor(Math.random() * websites.length);
 
     var r2 = Math.floor(Math.random() * second.length);
@@ -42,7 +30,7 @@ var second = [
  "quote": goto,
   "author": second
     } 
-    fetch("http://jsonapithing.glitch.me/quotes.json")
+    fetch("https://nate-quote-api.herokuapp.com/quotes.json")
 
     .then(res => res.json())
 
@@ -61,8 +49,12 @@ fs.writeFile('./info.json', jsonString, err => {
       .catch(error => console.log(error));
 
 
-}, 30000000);
-
+}, 500);
+// 500 miliseconds seems like the time that people would take to refresh the page and fetch a new quote, right??
+// well maybe
+// btw im talking to myself
+// im going insane
+// also someone else made the quotes json thing but k
 
 
 
